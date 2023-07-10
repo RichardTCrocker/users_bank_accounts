@@ -23,7 +23,7 @@ class BankAccount:
         yielded_amount = self.balance * self.int_rate
         self.balance = self.balance + yielded_amount
         return self
-    
+
 
 class User:
 
@@ -52,7 +52,5 @@ account_456.deposit(50).deposit(700).withdraw(25).withdraw(25).withdraw(25).with
 
 
 Spencer = User("Spencer", "spencer@gmail.com")
-print("1")
-Spencer.display_user_balance
-print("2")
+Spencer.display_user_balance()
 print(Spencer.name, Spencer.email, Spencer.account.balance)
